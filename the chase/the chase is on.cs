@@ -22,13 +22,18 @@ namespace the_chase
         {
             timer1.Enabled = false;
             MessageBox.Show("win");
-            Application.Exit();
+            Form1 begi = new Form1();
+            begi.Show();
+            this.Hide();
         }
         public void endgameL()
         {
             timer1.Enabled = false;
             MessageBox.Show("Lost");
-            Application.Exit();
+            Form1 begi = new Form1();
+            begi.Show();
+            
+            this.Hide();
         }
         static public double five = 5;
         static public double ten = 10;
@@ -243,6 +248,11 @@ namespace the_chase
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

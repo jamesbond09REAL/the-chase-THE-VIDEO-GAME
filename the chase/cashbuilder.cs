@@ -82,7 +82,12 @@ namespace the_chase
                 button3.Enabled = false;
                 button4.Visible = true;
                 textBox4.Visible = false;
+                reset.Visible = false;
+                textBox3.Text = $"TIME: {time}";
+                timer1.Enabled = false;
+
             }
+
             else
             {
                 textBox3.Text = $"TIME: {time}";
@@ -103,6 +108,25 @@ namespace the_chase
             button2.Enabled = true;
             button3.Enabled = true;
             button5.Visible = false;
+
+        }
+
+        private void reset_Click(object sender, EventArgs e)
+        {
+            button1.Enabled = false;
+            button2.Enabled = false;
+            button3.Enabled = false;
+            button5.Visible = true;
+            reset.Visible = false;
+            button4.Visible = false;
+            button5.Enabled = true;
+            time = 15;
+            cash = 0;
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

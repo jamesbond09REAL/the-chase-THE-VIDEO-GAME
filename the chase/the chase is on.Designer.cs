@@ -45,6 +45,7 @@
             this.lowoffer = new System.Windows.Forms.TextBox();
             this.mediumoffer = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // thesinnermanimage
@@ -195,11 +196,22 @@
             this.textBox1.Visible = false;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(627, 408);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(161, 30);
+            this.button6.TabIndex = 27;
+            this.button6.Text = "Close (USE)";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // the_chase_is_on
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.mediumoffer);
             this.Controls.Add(this.lowoffer);
@@ -239,5 +251,6 @@
         private System.Windows.Forms.TextBox lowoffer;
         private System.Windows.Forms.TextBox mediumoffer;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button6;
     }
 }

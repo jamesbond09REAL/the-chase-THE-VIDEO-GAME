@@ -45,6 +45,7 @@
             this.thesinnermanquote = new System.Windows.Forms.TextBox();
             this.thevixenquote = new System.Windows.Forms.TextBox();
             this.themenacequote = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -209,11 +210,22 @@
             this.themenacequote.Text = "\"I just wanted a door for my house and I ended up being on TV.\"";
             this.themenacequote.Visible = false;
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(716, 489);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(161, 30);
+            this.button6.TabIndex = 27;
+            this.button6.Text = "Close (USE)";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(889, 525);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.themenacequote);
             this.Controls.Add(this.thevixenquote);
             this.Controls.Add(this.thesinnermanquote);
@@ -256,6 +268,7 @@
         private System.Windows.Forms.TextBox thesinnermanquote;
         private System.Windows.Forms.TextBox thevixenquote;
         private System.Windows.Forms.TextBox themenacequote;
+        private System.Windows.Forms.Button button6;
     }
 }
 
