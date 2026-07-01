@@ -44,6 +44,7 @@
             this.highoffer = new System.Windows.Forms.TextBox();
             this.lowoffer = new System.Windows.Forms.TextBox();
             this.mediumoffer = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // thesinnermanimage
@@ -183,11 +184,23 @@
             this.mediumoffer.TabIndex = 22;
             this.mediumoffer.Text = "Medium offer";
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(12, 36);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(776, 62);
+            this.textBox1.TabIndex = 23;
+            this.textBox1.Text = "CLICK on bradley to make him GO";
+            this.textBox1.Visible = false;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // the_chase_is_on
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.mediumoffer);
             this.Controls.Add(this.lowoffer);
             this.Controls.Add(this.highoffer);
@@ -225,5 +238,6 @@
         private System.Windows.Forms.TextBox highoffer;
         private System.Windows.Forms.TextBox lowoffer;
         private System.Windows.Forms.TextBox mediumoffer;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

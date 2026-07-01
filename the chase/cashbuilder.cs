@@ -81,6 +81,7 @@ namespace the_chase
                 button2.Enabled = false;
                 button3.Enabled = false;
                 button4.Visible = true;
+                textBox4.Visible = false;
             }
             else
             {

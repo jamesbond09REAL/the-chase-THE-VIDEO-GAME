@@ -37,32 +37,38 @@ namespace the_chase
             {
                 case 1:
                     whichtext.Text = "THE BEAST";
+                    thebeastquote.Visible = true;
                     thebeastimage.Visible = true;
                     chasermulti = 1.3;
                     break;
                 case 2:
                     whichtext.Text = "THE DARK DESTROYER";
                     thedarkdestroyerimage.Visible = true;
+                    thedarkdestroyerquote.Visible = true;
                     chasermulti = 1.1;
                     break;
                 case 3:
                     whichtext.Text = "THE GOVERNESS";
                     thegoverness.Visible = true;
+                    thegovernessquote.Visible = true;
                     chasermulti = 1.6;
                     break;
                 case 4:
                     whichtext.Text = "THE SINNERMAN";
                     thesinnermanimage.Visible = true;
+                    thesinnermanquote.Visible = true;
                     chasermulti = 1.4;
                     break;
                 case 5:
                     whichtext.Text = "THE VIXEN";
                     thevixenbutton.Visible = true;
+                    thevixenquote.Visible = true;
                     chasermulti = 1.5;  
                     break;
                 case 6:
                     whichtext.Text = "THE MENACE";
                     themenacebutton.Visible = true;
+                    themenacequote.Visible = true;
                     chasermulti = 1.2;
                     break;
 
