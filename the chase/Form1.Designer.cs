@@ -39,6 +39,13 @@
             this.thesinnermanimage = new System.Windows.Forms.Button();
             this.whichtext = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
+            this.thebeastquote = new System.Windows.Forms.TextBox();
+            this.thedarkdestroyerquote = new System.Windows.Forms.TextBox();
+            this.thegovernessquote = new System.Windows.Forms.TextBox();
+            this.thesinnermanquote = new System.Windows.Forms.TextBox();
+            this.thevixenquote = new System.Windows.Forms.TextBox();
+            this.themenacequote = new System.Windows.Forms.TextBox();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -149,11 +156,82 @@
             this.button2.Visible = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // thebeastquote
+            // 
+            this.thebeastquote.Location = new System.Drawing.Point(557, 106);
+            this.thebeastquote.Name = "thebeastquote";
+            this.thebeastquote.Size = new System.Drawing.Size(281, 20);
+            this.thebeastquote.TabIndex = 11;
+            this.thebeastquote.Text = "\"I’d shake your hand, but I have no idea where it\'s been.\"";
+            this.thebeastquote.Visible = false;
+            // 
+            // thedarkdestroyerquote
+            // 
+            this.thedarkdestroyerquote.Location = new System.Drawing.Point(557, 106);
+            this.thedarkdestroyerquote.Name = "thedarkdestroyerquote";
+            this.thedarkdestroyerquote.Size = new System.Drawing.Size(168, 20);
+            this.thedarkdestroyerquote.TabIndex = 12;
+            this.thedarkdestroyerquote.Text = "\"Are you a star wars fan are you?\"";
+            this.thedarkdestroyerquote.Visible = false;
+            // 
+            // thegovernessquote
+            // 
+            this.thegovernessquote.Location = new System.Drawing.Point(557, 106);
+            this.thegovernessquote.Name = "thegovernessquote";
+            this.thegovernessquote.Size = new System.Drawing.Size(185, 20);
+            this.thegovernessquote.TabIndex = 13;
+            this.thegovernessquote.Text = "\"you shouldnt let matilda ruin your life\"";
+            this.thegovernessquote.Visible = false;
+            // 
+            // thesinnermanquote
+            // 
+            this.thesinnermanquote.Location = new System.Drawing.Point(557, 106);
+            this.thesinnermanquote.Name = "thesinnermanquote";
+            this.thesinnermanquote.Size = new System.Drawing.Size(168, 20);
+            this.thesinnermanquote.TabIndex = 14;
+            this.thesinnermanquote.Text = "\"You cost me an Xbox, you twat.\"";
+            this.thesinnermanquote.Visible = false;
+            // 
+            // thevixenquote
+            // 
+            this.thevixenquote.Location = new System.Drawing.Point(557, 106);
+            this.thevixenquote.Name = "thevixenquote";
+            this.thevixenquote.Size = new System.Drawing.Size(188, 20);
+            this.thevixenquote.TabIndex = 15;
+            this.thevixenquote.Text = "\"I\'m a professional crusher of dreams.\" ";
+            this.thevixenquote.Visible = false;
+            // 
+            // themenacequote
+            // 
+            this.themenacequote.Location = new System.Drawing.Point(557, 106);
+            this.themenacequote.Name = "themenacequote";
+            this.themenacequote.Size = new System.Drawing.Size(312, 20);
+            this.themenacequote.TabIndex = 16;
+            this.themenacequote.Text = "\"I just wanted a door for my house and I ended up being on TV.\"";
+            this.themenacequote.Visible = false;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(716, 489);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(161, 30);
+            this.button6.TabIndex = 27;
+            this.button6.Text = "Close (USE)";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(889, 525);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.themenacequote);
+            this.Controls.Add(this.thevixenquote);
+            this.Controls.Add(this.thesinnermanquote);
+            this.Controls.Add(this.thegovernessquote);
+            this.Controls.Add(this.thedarkdestroyerquote);
+            this.Controls.Add(this.thebeastquote);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.whichtext);
             this.Controls.Add(this.button1);
@@ -184,6 +262,13 @@
         private System.Windows.Forms.Button thesinnermanimage;
         private System.Windows.Forms.TextBox whichtext;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox thebeastquote;
+        private System.Windows.Forms.TextBox thedarkdestroyerquote;
+        private System.Windows.Forms.TextBox thegovernessquote;
+        private System.Windows.Forms.TextBox thesinnermanquote;
+        private System.Windows.Forms.TextBox thevixenquote;
+        private System.Windows.Forms.TextBox themenacequote;
+        private System.Windows.Forms.Button button6;
     }
 }
 

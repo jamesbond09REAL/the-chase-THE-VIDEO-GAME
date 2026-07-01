@@ -22,13 +22,18 @@ namespace the_chase
         {
             timer1.Enabled = false;
             MessageBox.Show("win");
-            Application.Exit();
+            Form1 begi = new Form1();
+            begi.Show();
+            this.Hide();
         }
         public void endgameL()
         {
             timer1.Enabled = false;
             MessageBox.Show("Lost");
-            Application.Exit();
+            Form1 begi = new Form1();
+            begi.Show();
+            
+            this.Hide();
         }
         static public double five = 5;
         static public double ten = 10;
@@ -102,6 +107,7 @@ namespace the_chase
 
         private void button1_Click(object sender, EventArgs e)
         {
+            textBox1.Visible = true;
             highoffer.Visible = false;
             mediumoffer.Visible = false;
             lowoffer.Visible = false;
@@ -145,6 +151,8 @@ namespace the_chase
             ourchasermulti = ourchasermulti;
             round5 = Convert.ToInt32(Math.Ceiling(five * ourchasermulti));
             round10 = Convert.ToInt32(Math.Ceiling(ten * ourchasermulti));
+            textBox1.Visible = true;
+
             highoffer.Visible = false;
             mediumoffer.Visible = false;
             lowoffer.Visible = false;
@@ -185,6 +193,7 @@ namespace the_chase
             ourchasermulti = ourchasermulti * 0.75;
             round5 = Convert.ToInt32(Math.Ceiling(five * ourchasermulti));
             round10 = Convert.ToInt32(Math.Ceiling(ten * ourchasermulti));
+            textBox1.Visible = true;
             highoffer.Visible = false;
             mediumoffer.Visible = false;
             lowoffer.Visible = false;
@@ -234,6 +243,16 @@ namespace the_chase
         {
             chasermove();
             
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
