@@ -102,6 +102,9 @@ namespace the_chase
 
         private void button1_Click(object sender, EventArgs e)
         {
+            highoffer.Visible = false;
+            mediumoffer.Visible = false;
+            lowoffer.Visible = false;
             button1.Visible = false;
             button2.Visible = false;
             button3.Visible = false;
@@ -142,6 +145,9 @@ namespace the_chase
             ourchasermulti = ourchasermulti;
             round5 = Convert.ToInt32(Math.Ceiling(five * ourchasermulti));
             round10 = Convert.ToInt32(Math.Ceiling(ten * ourchasermulti));
+            highoffer.Visible = false;
+            mediumoffer.Visible = false;
+            lowoffer.Visible = false;
             button1.Visible = false;
             button2.Visible = false;
             button3.Visible = false;
@@ -179,6 +185,9 @@ namespace the_chase
             ourchasermulti = ourchasermulti * 0.75;
             round5 = Convert.ToInt32(Math.Ceiling(five * ourchasermulti));
             round10 = Convert.ToInt32(Math.Ceiling(ten * ourchasermulti));
+            highoffer.Visible = false;
+            mediumoffer.Visible = false;
+            lowoffer.Visible = false;
             button1.Visible = false;
             button2.Visible = false;
             button3.Visible = false;

@@ -41,6 +41,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.highoffer = new System.Windows.Forms.TextBox();
+            this.lowoffer = new System.Windows.Forms.TextBox();
+            this.mediumoffer = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // thesinnermanimage
@@ -156,11 +159,38 @@
             this.timer1.Interval = 250;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // highoffer
+            // 
+            this.highoffer.Location = new System.Drawing.Point(478, 142);
+            this.highoffer.Name = "highoffer";
+            this.highoffer.Size = new System.Drawing.Size(124, 20);
+            this.highoffer.TabIndex = 20;
+            this.highoffer.Text = "High offer";
+            // 
+            // lowoffer
+            // 
+            this.lowoffer.Location = new System.Drawing.Point(478, 236);
+            this.lowoffer.Name = "lowoffer";
+            this.lowoffer.Size = new System.Drawing.Size(124, 20);
+            this.lowoffer.TabIndex = 21;
+            this.lowoffer.Text = "Low offer";
+            // 
+            // mediumoffer
+            // 
+            this.mediumoffer.Location = new System.Drawing.Point(478, 189);
+            this.mediumoffer.Name = "mediumoffer";
+            this.mediumoffer.Size = new System.Drawing.Size(124, 20);
+            this.mediumoffer.TabIndex = 22;
+            this.mediumoffer.Text = "Medium offer";
+            // 
             // the_chase_is_on
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.mediumoffer);
+            this.Controls.Add(this.lowoffer);
+            this.Controls.Add(this.highoffer);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -175,6 +205,7 @@
             this.Text = "the_chase_is_on";
             this.Load += new System.EventHandler(this.the_chase_is_on_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -191,5 +222,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox highoffer;
+        private System.Windows.Forms.TextBox lowoffer;
+        private System.Windows.Forms.TextBox mediumoffer;
     }
 }
